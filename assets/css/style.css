@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: "signatie";
+  src: url(/assets/fonts/signatie/Signatie.ttf);
+}
 :root{
   --white_color: #fff;
   --primary_color: #2A2C39;
   --secondary_color: #252734;
-  --primary_text_color: #858792;
-  --border_color: #2e303d;
+  --primary_text_color: rgba(255, 255, 255, 0.5);
+  --border_color: rgba(255, 255, 255, 0.1);
+  --ratings_color: #ffa200;
 }
 * {
   margin: 0;
@@ -14,6 +19,9 @@
   font-family: "Poppins", serif; 
   /* font-family: "Open Sans", sans-serif;  */
 }
+.container{
+  max-width: 1170px !important;
+}
 .section_sub_title{
   font-size: 18px;
   color: var(--primary_text_color);
@@ -22,6 +30,7 @@
   font-size: 70px;
   font-weight: 600;
   margin: 25px 0 100px 0;
+  color: var(--white_color);
 }
 .custom_btn {
   font-size: 15px;
@@ -61,7 +70,6 @@ a{
 }
 h1,h2,h3,h4,h5,h6{
   font-family: "Cormorant Garamond", serif;
-  color: var(--white_color);
   transition: all 0.3s ease-in-out;
 }
 img{
@@ -114,8 +122,9 @@ header.sticky {
 
 header .logo a {
   color: var(--white_color);
-  font-size: 4vmin;
+  font-size: 3vmin;
   font-weight: 500;
+  font-family: "signatie";
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
@@ -364,7 +373,7 @@ header .nav-menu .nav-link a:hover:before {
 .banner_section .right_site .banner_image{
   z-index: 10;
 }
-.banner_section .right_site .banner_image img{
+.banner_section .right_site .banner_image .banner_img{
   margin-left: -250px;
 }
 .banner_section .shape_body{
@@ -422,8 +431,9 @@ header .nav-menu .nav-link a:hover:before {
   flex-wrap: wrap;
   margin-bottom: -20px;
 }
-.social-icons a i{
-  font-size: 16px;
+.social-icons a img{
+  width: 30px;
+  color: var(--white_color);
 }
 .social-icons a {
   width: 80px;
@@ -622,4 +632,82 @@ header .nav-menu .nav-link a:hover:before {
   font-size: 16px;
   font-family: "Poppins", serif;
   color: var(--primary_text_color);
+}
+/* *******Testimonial section styles here*********** */
+#testimonial_section .testimonial_caption{
+  top: 180px;
+  right: 20%;
+  background-color: var(--primary_color);
+  z-index: 10;
+}
+#testimonial_section .testimonial_caption .section_title{
+  margin-bottom: 0;
+}
+#testimonial_section .testimonial_slider .card{
+  margin-right: 100px;
+  padding: 30px;
+  background-color: var(--secondary_color) !important;
+  color: var(--white_color);
+  position: relative;
+  overflow: hidden;
+}
+#testimonial_section .testimonial_slider .right_site{
+  padding-top: 170px;
+}
+#testimonial_section .testimonial_slider .card_icon{
+  width: 40px;
+}
+#testimonial_section .testimonial_slider .card .description{
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Cormorant Garamond", serif
+}
+#testimonial_section .testimonial_slider.card .client_name{
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Poppins", serif; 
+}
+#testimonial_section .testimonial_slider .card .ratings i{
+  font-size: 15px;
+  color: var(--ratings_color);
+}
+#testimonial_section .testimonial_slider .card .ratings .fa-regular{
+  color: var(--white_color);
+}
+#testimonial_section .testimonial_slider .card .ocupation{
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Poppins", serif; 
+  color: var(--primary_text_color);
+}
+#testimonial_section .slick-next,
+#testimonial_section .slick-prev {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--white_color);
+  color: white;
+  position: relative;
+  z-index: 15;
+}
+
+#testimonial_section .slick-next {
+  left: 450px;
+  top: -45px;
+}
+#testimonial_section .slick-prev {
+  top: 750px;
+  left: 550px;
+}
+.slick-prev:before {
+  content: '\f101';
+  font-family: "fontawesome";
+  color: black;
+}
+.slick-next:before{
+  content: '\f100';
+  font-family: "fontawesome";
+  color: black;
 }

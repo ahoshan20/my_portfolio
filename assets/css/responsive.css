@@ -73,7 +73,7 @@
   .banner_section .right_site .banner_image {
     width: 80vmin;
   }
-  .banner_section .right_site .banner_image img{
+  .banner_section .right_site .banner_image .banner_img{
     margin-left: -100px;
   }
   .banner_section .shape_body {
@@ -190,7 +190,7 @@
   .banner_section .right_site .banner_image {
     width: 70vmin;
   }
-  .banner_section .right_site .banner_image img{
+  .banner_section .right_site .banner_image .banner_img{
     margin-left: -50px;
   }
   .banner_section .shape_body {
@@ -283,7 +283,7 @@
   .banner_section .right_site .banner_image {
     width: 70vmin;
   }
-  .banner_section .right_site .banner_image img{
+  .banner_section .right_site .banner_image .banner_img{
     margin-left: 0;
   }
   .banner_section .shape_body {
@@ -360,7 +360,7 @@
   .banner_section .right_site .banner_image {
     width: 60vmin;
   }
-  .banner_section .right_site .banner_image img{
+  .banner_section .right_site .banner_image.banner_img{
     margin-left: 0;
   }
   .banner_section .shape_body {
