@@ -711,3 +711,69 @@ header .nav-menu .nav-link a:hover:before {
   font-family: "fontawesome";
   color: black;
 }
+/* ********Footer section styles here********* */
+.footer-section {
+  padding-top: 150px;
+}
+.footer-section .footer_top{
+  margin: 100px 0;
+}
+.footer-section .bi {
+  font-size: 1.5rem;
+}
+.footer-section .back-to-top:hover {
+  background-color: #495057;
+}
+.footer-section .phone_number,
+.footer-section .email_number{
+  font-size: 24px;
+}
+.footer-section .phone_icon,
+.footer-section .email_icon{
+display: inline-block;
+margin-right: 10px;
+color: white;
+width: 70px;
+height: 70px;
+line-height: 60px;
+border: 1px solid white;
+border-radius: 50%;
+padding: 5px;
+transition: all 0.3s ease-in-out;
+}
+.footer-section .phone_icon:hover,
+.footer-section .email_icon:hover{
+background-color: white;
+color: #343a40;
+}
+.footer-section .social_media a {
+  text-decoration: none;
+width: 50px;
+height: 50px;
+line-height: 60px;
+border: 1px solid white;
+border-radius: 50%;
+padding: 5px;
+transition: all 0.3s ease-in-out;
+}
+.footer-section .social_media a i{
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.footer-section .social_media a:hover{
+background-color: white;
+color: #343a40;
+}
+.footer-section .social_media a:hover i{
+background-color: white;
+color: #343a40;
+}
+.footer-section .social_media a:hover {
+  color: #d3d3d3;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
